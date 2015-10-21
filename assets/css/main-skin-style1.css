@@ -1287,6 +1287,7 @@ textarea {
 }
 .page-portfolio__image {
   max-width: 100%;
+  border: thin gray solid;
 }
 .page-portfolio__item__info {
   width: 100%;
