@@ -3,8 +3,8 @@ var Template = {
 	googleMapConfig:{
 		// change map marker location here
 		markerLocation:{
-			lat:-34.397,
-			lng:150.644
+			lat:39.7392358,
+			lng:-104.990251
 		},
 		// uncomment line below if you want use image or svg file as a marker
 		//markerIcon:{ url:'assets/svg/map-marker.svg' },
@@ -16,7 +16,7 @@ var Template = {
 
 	/**
 	 * Main init function
-	 * 
+	 *
 	 * @return {void}
 	 */
 	init: function(){
@@ -62,7 +62,7 @@ var Template = {
 
 	/**
 	 * Page reume init function
-	 * 
+	 *
 	 * @require bootstrap-collapse.js, bootstrap-transition.js
 	 * @return {void}
 	 */
@@ -149,7 +149,7 @@ var Template = {
 
 	/**
 	 * Init blog page
-	 * 
+	 *
 	 * @return {void}
 	 */
 	initBlog: function(){
@@ -158,7 +158,7 @@ var Template = {
 
 	/**
 	 * Init portfolio page
-	 * 
+	 *
 	 * @return {void}
 	 */
 	initPortfolio: function(){
@@ -173,7 +173,7 @@ var Template = {
 
 	/**
 	 * Init google map component
-	 * 
+	 *
 	 * @require http://maps.google.com/maps/api/js?sensor=false
 	 * @return {void}
 	 */
@@ -208,7 +208,7 @@ var Template = {
 
 	/**
 	 * Initialize form validation functionality on the contact page
-	 * 
+	 *
 	 * @return {void}
 	 */
 	initContactFormValidation: function(){
@@ -283,8 +283,8 @@ var Template = {
 								.text(response.message || 'Your message was sent successfully. Thanks.');
 							form.trigger('reset');
 						} else {
-							var errorStatusMessage = response.errors && response.errors.status 
-									? response.errors.status 
+							var errorStatusMessage = response.errors && response.errors.status
+									? response.errors.status
 									: 'Failed to send your message. Please try later or contact the administrator by another method.';
 							formStatusEl
 								.addClass(formStatusClassError)
@@ -299,7 +299,7 @@ var Template = {
 
 	/**
 	 * Applies ajax navigation for all links inside passed element
-	 * 
+	 *
 	 * @param  {domNode|jQuery}  el
 	 * @param  {String} selector elements for that click handler should be applied
 	 * @return {void}
@@ -342,7 +342,7 @@ var Template = {
 	},
 
 	_applyLayoutTitlePatch:function(){
-		// fix for IE and FF browsers 
+		// fix for IE and FF browsers
 		if (this.tools.isIe() || /firefox/i.test(navigator.userAgent)) {
 			// section title has a fixed position but has not any "top" or "buttom" value
 			var ieFixStyleNode,
@@ -384,7 +384,7 @@ Template.menu = {
 
 	/**
 	 * Main init function
-	 * 
+	 *
 	 * @param  {Object} config [description]
 	 * @return {void}
 	 */
@@ -415,7 +415,7 @@ Template.menu = {
 
 	/**
 	 * Returns jQuery collection with main menu element
-	 * 
+	 *
 	 * @return {jQuery}
 	 */
 	getHeaderMenu:function(forElement){
@@ -424,7 +424,7 @@ Template.menu = {
 
 	/**
 	 * Returns jQuery collection with main menu items
-	 * 
+	 *
 	 * @return {jQuery}
 	 */
 	getMenuItems:function(justLinks, forElement){
@@ -434,7 +434,7 @@ Template.menu = {
 
 	/**
 	 * Returns jQuery collection with main menu slider element
-	 * 
+	 *
 	 * @return {jQuery}
 	 */
 	getSlider:function(){
@@ -443,7 +443,7 @@ Template.menu = {
 
 	/**
 	 * Loads new page via ajax.
-	 * 
+	 *
 	 * @param  {srting} url
 	 * @return {void}
 	 */
@@ -502,7 +502,7 @@ Template.menu = {
 
 	/**
 	 * Checks if current page loaded via 'file://' protocol.
-	 * 
+	 *
 	 * @return {Boolean}
 	 */
 	isFileProtocol:function(){
@@ -511,7 +511,7 @@ Template.menu = {
 
 	/**
 	 * Alias
-	 * 
+	 *
 	 * @see Template.menu.isIe
 	 * @return {Boolean}
 	 */
@@ -543,7 +543,7 @@ Template.menu = {
 
 	/**
 	 * Checks if url should be loaded via ajax.
-	 * 
+	 *
 	 * @see  loadPage
 	 * @param  {String}  fragment document.lovation.hash value
 	 * @return {Boolean}
@@ -568,7 +568,7 @@ Template.menu = {
 
 	/**
 	 * Replaces current page content with new one (loaded via ajax) with specefied animation effect.
-	 * 
+	 *
 	 * @param  {jQuery} section    current page content element
 	 * @param  {jQuery} newSection new page content element
 	 * @param  {String} effect     animation effect, allowed values are: 'slideLeft','slideRight','flap' and 'fade' (default)
@@ -682,7 +682,7 @@ Template.menu = {
 
 	/**
 	 * Main menu init function
-	 * 
+	 *
 	 * @return {void}
 	 */
 	_initMainMenu:function(){
@@ -742,7 +742,7 @@ Template.menu = {
 
 	/**
 	 * Mobile menu init function
-	 * 
+	 *
 	 * @return {void}
 	 */
 	_initMobileMenu:function(){
@@ -795,7 +795,7 @@ Template.menu = {
 
 	/**
 	 * Marks passed item as active menu item
-	 * 
+	 *
 	 * @param {jQuery} item
 	 * @return {void}
 	 */
@@ -812,7 +812,7 @@ Template.menu = {
 
 	/**
 	 * Updates menu slider element position to locate it over active menu item
-	 * 
+	 *
 	 * @return {void}
 	 */
 	_fixSliderPosition:function(){
@@ -831,7 +831,7 @@ Template.menu = {
 	/**
 	 * Reads hashtag and loads corresponding page via ajax.
 	 * Used at the init event.
-	 * 
+	 *
 	 * @return {void}
 	 */
 	_restoreActiveCurrentPageState:function(){
@@ -894,7 +894,7 @@ Template.layout = {
 
 	/**
 	 * Scrolls content to specefied target
-	 * 
+	 *
 	 * @param  {String} target
 	 * @param  {Objec} options
 	 * @return {void}
@@ -942,7 +942,7 @@ Template.layout = {
 Template.shortcodes = {
 	/**
 	 * General init function
-	 * 
+	 *
 	 * @param  {domNode|jQuery} forElement element for that all init should be applied
 	 * @return {void}
 	 */
@@ -960,7 +960,7 @@ Template.shortcodes = {
 
 	/**
 	 * Triggers 'hardReset' event that used to reinit all elements
-	 * 
+	 *
 	 * @return {void}
 	 */
 	hardReset: function(){
@@ -970,7 +970,7 @@ Template.shortcodes = {
 
 	/**
 	 * Init accordion controlls
-	 * 
+	 *
 	 * @param  {domNode|jQuery} forElement
 	 * @return {void}
 	 */
@@ -993,7 +993,7 @@ Template.shortcodes = {
 
 	/**
 	 * Init progress bar controlls
-	 * 
+	 *
 	 * @param  {domNode|jQuery} forElement
 	 * @param  {integer}        animationDuration
 	 * @return {void}
@@ -1052,7 +1052,7 @@ Template.shortcodes = {
 
 	/**
 	 * Init rating controlls
-	 * 
+	 *
 	 * @require jquery.raty.js
 	 * @param  {domNode|jQuery} forElement
 	 * @return {void}
@@ -1075,7 +1075,7 @@ Template.shortcodes = {
 
 	/**
 	 * Init donut chart controlls
-	 * 
+	 *
 	 * @require jquery.easypiechart.js
 	 * @param  {domNode|jQuery} forElement
 	 * @return {void}
@@ -1116,7 +1116,7 @@ Template.shortcodes = {
 	/**
 	 * Special wrapper over selector function.
 	 * Allows take ignore elements located in collapsed accordion panels.
-	 * 
+	 *
 	 * @param  {String}         selector               jquery selector
 	 * @param  {domNode|jQuery} forElement             container element, if not passed - document node will be used
 	 * @param  {Boolean}        includeingClosedPanels set to true if want ignore elements location

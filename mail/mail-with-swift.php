@@ -2,7 +2,7 @@
 // configurate notification subject and email address here
 // to change notification message please see 'fetchNotificationBody' function
 define('NOTIFICATION_SUBJECT', 'Savvy: Contact form notification');
-define('NOTIFICATION_EMAIL_ADDRESS', ''); // for example: 'your.email@host.com'
+define('NOTIFICATION_EMAIL_ADDRESS', 'snturek@gmail.com'); // for example: 'your.email@host.com'
 
 // complete your smtp settings here
 define('SMTP_SCHEME', 'ssl');
