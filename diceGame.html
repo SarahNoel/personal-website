@@ -22,7 +22,7 @@
                 <header>
                     <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
                     <ul class="main-nav">
-                        <li class="main-nav__item">
+                        <li class="main-nav__item main-nav__item--active">
                             <a class="main-nav__item-link" href="index.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-home"></i>
@@ -38,8 +38,7 @@
                                 <span class="main-nav__item-content">Resume</span>
                             </a>
                         </li>
-
-                        <li class="main-nav__item main-nav__item--active">
+                        <li class="main-nav__item">
                             <a class="main-nav__item-link" href="portfolio.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-books"></i>
@@ -47,7 +46,6 @@
                                 <span class="main-nav__item-content">Portfolio</span>
                             </a>
                         </li>
-
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="contact.html">
                                 <span class="main-nav__item-icon-wrapper">
@@ -58,7 +56,7 @@
                         </li>
                     </ul>
                     <div class="mobile-menu">
-                        <a class="mobile-menu__toggle" href="portfolio.html#">
+                        <a class="mobile-menu__toggle" href="index.html#">
                             <span class="mobile-menu__toggle__icon">
                                 <i class="fa fa-bars mobile-menu__toggle__icon__open"></i>
                                 <i class="fa fa-times mobile-menu__toggle__icon__close"></i>
@@ -104,86 +102,24 @@
             <div class="layout-container-main layout-container-width">
                 <!-- .layout-content -->
                 <div class="layout-content">
-                    <section class="page-portfolio">
+                    <section class="page-portfolio-single">
                         <div class="layout-title-wrapper layout-row">
-                            <h1 class="layout-title layout-container-width layout-container">Portfolio.
-                                <span class="layout-title__subtitle">My Projects</span>
+                            <h1 class="layout-title layout-container-width layout-container">High Roller.
+                                <span class="layout-title__subtitle">In detail</span>
                             </h1>
                         </div>
-                        <div class="page-portfolio__items-container layout-row">
-                        <div class="page-portfolio__item-wrapper">
-                            <div class="page-portfolio__item">
-                                <a href="diceGame.html">
-                                <img class="page-portfolio__image" src="uploads/portfolio/roller.png" alt="High Roller">
-                                </a>
-                                <div class="page-portfolio__item__info">
-                                    <h2 class="page-portfolio__item__title">High Roller</h2>
-                                    <div class="page-portfolio__item__content">A simple dice rolling game in vanilla Javascript.</div>
-                                    <a class="btn btn-lg btn--style2" href="diceGame.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
+                        <div class="layout-row">
+                            <a target = 'blank' href='http://sarahnoel.github.io/dice-game-part-2/'><img class="portfolio-single__image" src="uploads/portfolio/roller.png" alt="High Roller"></a>
+                        </div>
+                        <div class="portfolio-single__info layout-horizontal-padding">
+                            <div>
+                                <div class="portfolio-single__info__name">Project name:</div>
+                                <div class="portfolio-single__info__description">High Roller</div>
                             </div>
-                             <div class="page-portfolio__item-wrapper">
-                                <div class="page-portfolio__item">
-                                    <a href="petShop.html">
-                                        <img class="page-portfolio__image" src="uploads/portfolio/pets.png" alt="Pet Shop">
-                                    </a>
-                                    <div class="page-portfolio__item__info">
-                                        <h2 class="page-portfolio__item__title">Pet Shop</h2>
-                                        <div class="page-portfolio__item__content">My first project that uses jQuery and CSS for filtering and ordering.</div>
-                                        <a class="btn btn-lg btn--style2" href="petShop.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-portfolio__item-wrapper">
-                                <div class="page-portfolio__item">
-                                    <a href="translator.html">
-                                        <img class="page-portfolio__image" src="uploads/portfolio/mundo.png" alt="Faces">
-                                    </a>
-                                    <div class="page-portfolio__item__info">
-                                        <h2 class="page-portfolio__item__title">Hola Mundo Translator</h2>
-                                        <div class="page-portfolio__item__content">A language translator app that allows for practice and quizzes.</div>
-                                        <a class="btn btn-lg btn--style2" href="translator.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-portfolio__item-wrapper">
-                                <div class="page-portfolio__item">
-                                    <a href="scavengerHunt.html">
-                                        <img class="page-portfolio__image" src="uploads/portfolio/hunt.png" alt="Scavenger Hunt">
-                                    </a>
-                                    <div class="page-portfolio__item__info">
-                                        <h2 class="page-portfolio__item__title">Scavenger Hunt</h2>
-                                        <div class="page-portfolio__item__content">An angular project that unites scavenger hunters online.</div>
-                                        <a class="btn btn-lg btn--style2" href="scavengerHunt.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-portfolio__item-wrapper">
-                                <div class="page-portfolio__item">
-                                    <a href="haveEverything.html">
-                                        <img class="page-portfolio__image" src="uploads/portfolio/everything.png" alt="Have Everything?">
-                                    </a>
-                                    <div class="page-portfolio__item__info">
-                                        <h2 class="page-portfolio__item__title">Do I have Everything?</h2>
-                                        <div class="page-portfolio__item__content">A jQuery app that generates a packing list based on weather and length of trip.</div>
-                                        <a class="btn btn-lg btn--style2" href="haveEverything.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-<!--
-                            <div class="page-portfolio__item-wrapper">
-                                <div class="page-portfolio__item">
-                                    <a href="portfolio-single.html">
-                                        <img class="page-portfolio__image" src="uploads/portfolio/model-with-cameras-small.jpg" alt="Beauties">
-                                    </a>
-                                    <div class="page-portfolio__item__info">
-                                        <h2 class="page-portfolio__item__title">Beauties</h2>
-                                        <div class="page-portfolio__item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                        <a class="btn btn-lg btn--style2" href="portfolio-single.html">See More <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
+
+                            <p class="portfolio-single__info__text">
+                                This was the very first project I did in code.  It's a simple dice game where the combo of 4,5,6 wins, 1,2,3 loses, or whoever rolls the highest amount wins. It is in pure vanilla Javascript, as I was unaware that any other coding language even existed!
+                            </p>
                         </div>
                     </section>
                 </div>
@@ -214,12 +150,12 @@
             </div>
             <div class="style-panel__title">Choose a color:</div>
             <div class="style-panel__colors">
-                <a data-value="style1" href="portfolio.html#" class="style-panel__color style-panel__color--style1"></a>
-                <a data-value="style2" href="portfolio.html#" class="style-panel__color style-panel__color--style2"></a>
-                <a data-value="style3" href="portfolio.html#" class="style-panel__color style-panel__color--style3"></a>
-                <a data-value="style4" href="portfolio.html#" class="style-panel__color style-panel__color--style4"></a>
-                <a data-value="style5" href="portfolio.html#" class="style-panel__color style-panel__color--style5"></a>
-                <a data-value="style6" href="portfolio.html#" class="style-panel__color style-panel__color--style6"></a>
+                <a data-value="style1" href="portfolio-single.html#" class="style-panel__color style-panel__color--style1"></a>
+                <a data-value="style2" href="portfolio-single.html#" class="style-panel__color style-panel__color--style2"></a>
+                <a data-value="style3" href="portfolio-single.html#" class="style-panel__color style-panel__color--style3"></a>
+                <a data-value="style4" href="portfolio-single.html#" class="style-panel__color style-panel__color--style4"></a>
+                <a data-value="style5" href="portfolio-single.html#" class="style-panel__color style-panel__color--style5"></a>
+                <a data-value="style6" href="portfolio-single.html#" class="style-panel__color style-panel__color--style6"></a>
             </div>
             <div class="style-panel__reset">
                 <button class="btn-reset btn btn-xs btn--style1">reset</button>
