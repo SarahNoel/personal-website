@@ -95,6 +95,8 @@ a:focus {
   font: normal normal 2.125em/1.33em Novecento_wide_bold;
   text-transform: uppercase;
 }
+
+
 @media (max-width: 910px) {
   .sidebar {
     text-align: center;

@@ -8,7 +8,7 @@ var Template = {
 		},
 		// uncomment line below if you want use image or svg file as a marker
 		//markerIcon:{ url:'assets/svg/map-marker.svg' },
-		zoom:8 // change map zoom value
+		zoom:10 // change map zoom value
 	},
 
 	// set to true to disable ajax pages loading
