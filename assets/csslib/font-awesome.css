@@ -929,6 +929,7 @@
 .fa-mail-reply:before,
 .fa-reply:before {
   content: "\f112";
+  color: white;
 }
 .fa-github-alt:before {
   content: "\f113";
